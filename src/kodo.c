@@ -2,6 +2,7 @@
 #include <string.h>
 
 #include "../include/output.h"
+#include "../include/kodo.h"
 
 int main(int args_count, char* args[]) {
 
@@ -9,7 +10,7 @@ int main(int args_count, char* args[]) {
 	else if(args_count == 2) {
 		if(strcmp(args[1], "--help") == 0) help();
 	}
-	else help();
+	else run();
 
 	return 0;
 }
