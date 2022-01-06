@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "utility.h"
+
 void too_many_args() {
 
 	printf("Too many arguments\n");
@@ -18,6 +20,9 @@ void help() {
 }
 void greet() {
 
+	char date[100];
+	get_date(date);
+	printf(date);
 	printf("Kodo 1.0.0 on linux");
 }
 

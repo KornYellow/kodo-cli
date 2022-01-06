@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat .git/refs/remotes/origin/master | git show --no-patch --no-notes --pretty='%cd' | cat > include/timestmp
+cat .git/refs/remotes/origin/master | git show --no-patch --no-notes --pretty='%cd' | cat > timestmp
 
 CPP_FLAG="-Wall -Wextra -std=c11 -pedantic"
 gcc $CPP_FLAG src/kodo.c -o src/kodo
