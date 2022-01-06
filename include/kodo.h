@@ -8,9 +8,10 @@
 
 void get_help() {
 
-	printf("\"task\"\t: list out all the tasks for today\n");
-	printf("\"edit\"\t: edit task list for today\n");
-	printf("\"new\"\t: make new task list for tomorrow\n");
+	printf("  \"task\" : list out all the tasks for today\n");
+	printf("  \"done\" : mark the task that you have done\n");
+	printf("  \"edit\" : edit task list for today\n");
+	printf("  \"new\"  : make new task list for tomorrow\n");
 }
 
 void get_lost() {

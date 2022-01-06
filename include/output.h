@@ -15,8 +15,8 @@ void too_many_args() {
 }
 void help() {
 
-	printf("-s\t: print out today's tasks status (or --status)\n");
-	printf("-h\t: print this help message and exit (or --help)\n");
+	printf("  -s  : print out today's tasks status (or --status)\n");
+	printf("  -h  : print this help message and exit (or --help)\n");
 	exit(1);
 }
 void greet() {
@@ -32,8 +32,8 @@ void greet() {
 	printf("Kodo %s (%s) on linux\n\n", VERSION, date_git);
 
 	printf("[Date: %s] %d task(s) left\n", date_now, remaining_tasks);
-	printf("[ ] Complete all tasks for today\n");
-	printf("[ ] Make new tasks for tomorrow\n");
+	printf("  [ ] Complete all tasks for today\n");
+	printf("  [ ] Make new tasks for tomorrow\n");
 
 	printf("Type \"task\" to list out all the tasks for today\n");
 }
